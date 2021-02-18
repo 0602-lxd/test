@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f8f3e2;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    #index {
+        overflow-x: hidden;
+
+        .logo {
+            margin: auto;
+            display: block;
+            height: 150px;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            display: block;
+            color: #333;
+        }
+
+        .inputbox {
+            input {
+                max-width: 900px;
+                margin: 30px auto;
+                width: 100%;
+                display: block;
+                height: 80px;
+                text-align: center;
+                font-size: 40px;
+                line-height: 80px;
+                color: #666;
+                border: 2px solid #aa9e7f;
+                border-radius: 20px;
+                outline: none;
+
+            }
+
+            ::placeholder {
+                color: #ccc;
+            }
+        }
+
+        .btn {
+            display: block;
+            margin: auto;
+
+            img {
+                height: 180px;
+                display: block;
+                margin: auto;
+            }
+        }
+
+        .txt {
+            font-size: 26px;
+            text-align: center;
+            color: #666;
+            margin: 30px auto;
+        }
+    }
+
+    #app {
+        .logobox {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            vertical-align: middle;
+
+            .logo {
+                height: 90px;
+                margin: 30px;
+                vertical-align: middle;
+            }
+        }
+
+        .mainbox {
+            background-color: #fff;
+            border: 2px solid #aa9e7f;
+            border-radius: 20px;
+            height: calc(100vh - 550px);
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            overflow: auto;
+
+            .box {
+                .new-message {
+                    .tit {
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #333;
+                    }
+                }
+            }
+
+
+        }
+
+        .fn-clear {
+            overflow: hidden;
+            margin: 10px 0;
+            .fl.box {
+                float: left;
+                background-color: #c17e8c;
+                width: 60%;
+                border-radius: 30px;margin: 10px 0;
+                .name {
+                    font-size: 14px;
+                    color: #fff;
+                    padding: 10px 30px;
+                }
+
+                .desc {
+                    background-color: #ffc1cc;
+                    padding: 10px 30px;
+                    border-radius: 30px;
+                    min-height: 90px;
+                    box-sizing: border-box;display: flex;align-items:center;
+                                        position: relative;
+                    .time{
+                        float: right;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .fr.box {
+                float: right;
+                background-color: #a381a0;
+                width: 60%;
+               border-radius: 30px;margin: 10px 0;
+                .name {
+                    font-size: 24px;
+                    color: #fff;
+                    padding: 10px 30px;
+                }
+
+                .desc {
+                    background-color: #c59fbe;
+                    padding: 10px 30px;
+                    border-radius: 30px;
+                    box-sizing: border-box;min-height: 90px;
+                    display: flex;align-items:center;
+                    position: relative;
+                    .time{
+                        float: right;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+        }
+
+        input {
+            background-color: #fff;
+            max-width: 1200px;
+            width: 100%;
+            display: block;
+            margin: auto;
+            background-color: #fff;
+            line-height: 40px;
+            border-radius: 10px;
+            margin: 30px auto;
+            border: 2px solid #aa9e7f;
+            padding: 0 30px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        .textbox {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            border-radius: 30px;
+            border-radius: 10px;
+            border: 2px solid #aa9e7f;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+
+            textarea {
+                flex-grow: 1;
+                background-color: #fff;
+                border: none;
+                height: 200px;
+                display: block;
+                margin: auto;
+                background-color: #fff;
+                margin: 30px auto;
+                font-size: 24px;
+                padding: 0 30px;
+                outline: none;
+                resize: none;
+            }
+
+            .send {
+                img {
+                    height: 130px;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+
+    }
+}
