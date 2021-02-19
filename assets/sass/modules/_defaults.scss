@@ -1,0 +1,21 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main-background;
+    color: $main-text;
+    font-family: $default-family;
+    font-size: 16px;
+}
+
+a{
+    display: block;
+    color: white;
+    //text-decoration: none;
+
+    margin: 1rem 0;
+}

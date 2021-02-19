@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chat Page</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main id="app">
+        <div class="logobox">
+            <img class="logo" src="./images/chatlogo.png" alt="">
+            There are ( {{number}} ) people live.
+        </div>
+        <div class="mainbox">
+            <div class="fn-clear" id="messages">
+                <!-- render a new message component for every message -->
+                <newmessage :msg=" item" :socketid="socketID" v-for="(item,index) in list" :key="index">
+                </newmessage>
+
+            </div>
+        </div>
+        <div class=" inputbox">
+            <input type="text" v-model="username" placeholder="What is your nickname?">
+            <div class="textbox">
+                <textarea v-model="message" class="text-message" name="" id="" cols="30" rows="10"
+                    placeholder="Typie something..."></textarea>
+                <a href="javascript:;" class="send" @click="dispatchMessage">
+                    <img src="./images/chatsend.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- <h2>This is where my awesome chat messages will show up</h2> -->
+
+        <!-- vue custom massage component goes here
+        <section class="messages">
+             <ul id="messages" v-for="message in messages">
+                <newmessage :msg="message" :socketid="socketID"></newmessage>
+            </ul> 
+        </section>-->
+
+        <!-- <section calss="message-wrapper">
+            <textarea v-model="message" class="text-message"></textarea>
+            <input @click.prevent="dispatchMessage" type="submit" value="send">
+        </section> -->
+    </main>
+    <!-- development version, includes helpful console warnings -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
